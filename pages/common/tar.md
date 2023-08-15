@@ -24,6 +24,10 @@
 
 `tar xf {{path/to/source.tar[.gz|.bz2|.xz]}} --directory={{path/to/directory}}`
 
+- E[x]tract *some* files into a given directory (`--directory` must be before the files):
+
+`tar xf {{path/to/source.tar[.gz|.bz2|.xz]}} --directory={{destination/directory}} {{path/to/file1 path/to/file2 ...}}`
+
 - [c]reate a compressed archive and write it to a [f]ile, using [a]rchive suffix to determine the compression program:
 
 `tar caf {{path/to/target.tar.xz}} {{path/to/file1 path/to/file2 ...}}`
